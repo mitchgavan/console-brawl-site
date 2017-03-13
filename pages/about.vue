@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .title
 {
   margin-top: 50px;
@@ -38,6 +38,10 @@ export default {
   color: #9aabb1;
   margin: 0;
   margin-top: 10px;
+
+  .info-test {
+    color: #f00;
+  }
 }
 .button
 {
