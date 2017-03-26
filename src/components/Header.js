@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import Nav from './Nav';
 import logo from '../logo.svg';
 
 const HeaderBlock = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 `;
@@ -15,8 +18,8 @@ const HeaderLogo = styled.img`
 
 const Header = () => (
   <HeaderBlock>
-    <HeaderLogo src={logo} className="App-logo" alt="logo" />
-    <h2>Welcome to React Styled Man</h2>
+    <HeaderLogo src={logo} alt="logo" />
+    <Nav />
   </HeaderBlock>
 );
 
