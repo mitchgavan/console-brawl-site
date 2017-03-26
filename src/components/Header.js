@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
+import React from 'react';
 import styled from 'styled-components';
+import logo from '../logo.svg';
 
 const HeaderBlock = styled.div`
   background-color: #222;
@@ -13,15 +13,11 @@ const HeaderLogo = styled.img`
   height: 80px;
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <HeaderBlock>
-        <HeaderLogo src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to React Styled Man</h2>
-      </HeaderBlock>
-    );
-  }
-}
+const Header = () => (
+  <HeaderBlock>
+    <HeaderLogo src={logo} className="App-logo" alt="logo" />
+    <h2>Welcome to React Styled Man</h2>
+  </HeaderBlock>
+);
 
 export default Header;
