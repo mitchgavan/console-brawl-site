@@ -9,6 +9,7 @@ export default class extends React.Component {
     ? { userAgent: req.headers['user-agent'] }
     : { userAgent: navigator.userAgent };
   }
+
   render() {
     return (
       <div>
