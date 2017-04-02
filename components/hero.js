@@ -1,5 +1,5 @@
 import { Component } from 'react';
-// import { findDOMNode } from 'react-dom';
+import HeroImage from '../components/heroImage';
 
 class Hero extends Component {
   constructor(props) {
@@ -41,17 +41,12 @@ class Hero extends Component {
     return (
       <div className="hero">
         <div className="hero__item">
-          {this.state.platforms.map((platform) => {
-            const imgSrc = `/static/images/${platform}.jpg`;
-            return (
-              <img
-                src={imgSrc}
-                className="hero__img"
-                alt={platform}
-                key={platform}
-              />
-            );
-          })}
+          {this.state.platforms.map(platform => (
+            <HeroImage
+              platform={platform}
+              key={platform}
+            />
+          ))}
         </div>
         <div className="hero__item">
           <img
