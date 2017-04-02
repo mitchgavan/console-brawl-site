@@ -34,26 +34,17 @@ class Hero extends Component {
   }
 
   initCarousel() {
-    this.timerID = setInterval(() => this.tick(), 2000);
+    this.timerID = setInterval(() => this.tick(), 3000);
   }
 
   render() {
     return (
       <div className="hero">
         <div className="hero__item">
-          {this.state.platforms.map(platform => (
-            <HeroImage
-              platform={platform}
-              key={platform}
-            />
-          ))}
+          <HeroImage platform={this.state.platforms[this.state.active]} />
         </div>
         <div className="hero__item">
-          <img
-            src="/static/images/master-system.jpg"
-            className="hero__img"
-            alt="game"
-          />
+          <HeroImage platform={this.state.platforms[this.state.active]} />
         </div>
         <style jsx>{`
           .hero {
@@ -63,12 +54,7 @@ class Hero extends Component {
           .hero__item {
             position: relative;
             flex: 1 0 50%;
-            padding-bottom: 56.25%;
-          }
-          .hero__img {
-            position: absolute;
-            top: 0;
-            left: 0;
+            padding-bottom: 33.5%;
           }
         `}</style>
       </div>
