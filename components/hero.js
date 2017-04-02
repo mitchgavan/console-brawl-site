@@ -11,8 +11,18 @@ class Hero extends Component {
       platforms: [
         'master-system',
         'nintendo',
-        'super-nintendo',
         'sega-mega-drive',
+        'super-nintendo',
+        'sega-saturn',
+        'playstation-1',
+        'nintendo-64',
+        'sega-dreamcast',
+        'playstation-2',
+        'xbox',
+        'gamecube',
+        'playstation-3',
+        'xbox-360',
+        'wii',
       ],
     };
   }
@@ -34,17 +44,22 @@ class Hero extends Component {
   }
 
   initCarousel() {
-    this.timerID = setInterval(() => this.tick(), 3000);
+    this.timerID = setInterval(() => this.tick(), 4000);
   }
 
   render() {
     return (
       <div className="hero">
         <div className="hero__item">
-          <HeroImage platform={this.state.platforms[this.state.active]} />
+          <HeroImage
+            platform={this.state.platforms[this.state.active]}
+          />
         </div>
         <div className="hero__item">
-          <HeroImage platform={this.state.platforms[this.state.active]} />
+          <HeroImage
+            oppositeDirection
+            platform={this.state.platforms[this.state.active]}
+          />
         </div>
         <style jsx>{`
           .hero {
