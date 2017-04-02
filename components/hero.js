@@ -8,21 +8,23 @@ class Hero extends Component {
     this.state = {
       active: 0,
       carouselHeight: 0,
-      platforms: [
+      platformsA: [
         'master-system',
-        'nintendo',
-        'sega-mega-drive',
         'super-nintendo',
         'sega-saturn',
-        'playstation-1',
         'nintendo-64',
-        'sega-dreamcast',
-        'playstation-2',
         'xbox',
         'gamecube',
-        'playstation-3',
         'xbox-360',
+      ],
+      platformsB: [
+        'nintendo',
+        'sega-mega-drive',
+        'playstation-1',
+        'sega-dreamcast',
+        'playstation-2',
         'wii',
+        'playstation-3',
       ],
     };
   }
@@ -37,7 +39,7 @@ class Hero extends Component {
 
   tick() {
     this.setState(prevState => ({
-      active: prevState.active === this.state.platforms.length - 1
+      active: prevState.active === this.state.platformsA.length - 1
         ? 0
         : prevState.active + 1,
     }));
@@ -52,13 +54,13 @@ class Hero extends Component {
       <div className="hero">
         <div className="hero__item">
           <HeroImage
-            platform={this.state.platforms[this.state.active]}
+            platform={this.state.platformsA[this.state.active]}
           />
         </div>
         <div className="hero__item">
           <HeroImage
             oppositeDirection
-            platform={this.state.platforms[this.state.active]}
+            platform={this.state.platformsB[this.state.active]}
           />
         </div>
         <style jsx>{`
