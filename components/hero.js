@@ -71,7 +71,7 @@ class Hero extends Component {
           .hero__item {
             position: relative;
             flex: 1 0 50%;
-            padding-bottom: 33.5%;
+            padding-bottom: 33%;
           }
         `}</style>
       </div>

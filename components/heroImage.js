@@ -6,8 +6,8 @@ const HeroImage = (props) => {
   return (
     <ReactCSSTransitionGroup
       transitionName={props.oppositeDirection ? 'carousel-opposite' : 'carousel'}
-      transitionEnterTimeout={750}
-      transitionLeaveTimeout={750}
+      transitionEnterTimeout={2750}
+      transitionLeaveTimeout={2750}
     >
       <img
         src={imgSrc}
@@ -26,7 +26,7 @@ const HeroImage = (props) => {
         }
         .carousel-enter.carousel-enter-active {
           transform: translateY(0);
-          transition: transform .75s ease-out;
+          transition: transform .75s ease-out 2s;
         }
         .carousel-leave,
         .carousel-opposite-leave {
@@ -34,18 +34,18 @@ const HeroImage = (props) => {
         }
         .carousel-leave.carousel-leave-active {
           transform: translateY(100%);
-          transition: transform .75s ease-out;
+          transition: transform .75s ease-out 2s;
         }
         .carousel-opposite-enter {
           transform: translateY(100%);
         }
         .carousel-opposite-enter.carousel-opposite-enter-active {
           transform: translateY(0);
-          transition: transform .75s ease-out;
+          transition: transform .75s ease-out 2s;
         }
         .carousel-opposite-leave.carousel-opposite-leave-active {
           transform: translateY(-100%);
-          transition: transform .75s ease-out;
+          transition: transform .75s ease-out 2s;
         }
       `}</style>
     </ReactCSSTransitionGroup>
