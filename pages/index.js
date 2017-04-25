@@ -1,5 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+
+import stylesheet from '../styles/index.scss'
+
 import Header from '../components/header';
 import Hero from '../components/hero';
 
@@ -17,21 +20,11 @@ export default class extends React.Component {
           <title>Console Brawl</title>
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
         </Head>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         <Header />
         <Hero />
-
-        <style jsx global>{`
-          body {
-            margin: 0;
-            padding: 0;
-            font-family: sans-serif;
-          }
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-        `}</style>
       </div>
     );
   }

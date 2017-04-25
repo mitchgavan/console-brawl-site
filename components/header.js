@@ -1,8 +1,9 @@
 import Nav from './nav';
+import Logo from './logo';
 
 export default () => (
   <header>
-    <h1>Console Brawl</h1>
+    <Logo />
     <Nav />
 
     <style jsx>{`
@@ -11,7 +12,7 @@ export default () => (
         justify-content: space-between;
         align-items: center;
         background-color: #222;
-        padding: 20px;
+        padding: 10px 20px;
         color: white;
       }
     `}</style>
