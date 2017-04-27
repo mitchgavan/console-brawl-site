@@ -1,14 +1,26 @@
 @import 'normalize.css';
 
-$primary-color: black;
+$black: #121212;
+$white: #fafafa;
 
 body {
   margin: 0;
   padding: 0;
+  background-color: $black;
   font-family: 'Poppins', sans-serif;
+  color: $white;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
 }

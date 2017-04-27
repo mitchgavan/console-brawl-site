@@ -1,10 +1,11 @@
 import React from 'react';
 import Head from 'next/head';
 
-import stylesheet from '../styles/index.scss'
+import stylesheet from '../styles/index.scss';
 
 import Header from '../components/header';
 import Hero from '../components/hero';
+import Intro from '../components/intro';
 
 export default class extends React.Component {
   static async getInitialProps({ req }) {
@@ -25,6 +26,7 @@ export default class extends React.Component {
         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         <Header />
         <Hero />
+        <Intro />
       </div>
     );
   }
