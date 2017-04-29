@@ -10,7 +10,7 @@ const Button = props => (
     <style jsx>{`
       .button {
         display: inline-block;
-        margin: 0 1rem 0;
+        margin: 0 1rem 1rem;
         padding: 20px;
         width: 200px;
         background-color: #ECE9E6;
@@ -30,7 +30,6 @@ const Button = props => (
       .button-green {
         background-color: #56ab2f;
         background-image: linear-gradient(to right, #B6E026, #7DB326);
-
       }
     `}</style>
   </a>
