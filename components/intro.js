@@ -1,3 +1,5 @@
+import Button from './button';
+
 export default () => (
   <div className="intro">
     <div className="wrapper">
@@ -12,14 +14,21 @@ export default () => (
         alt="Console Brawl Mockup"
       />
       <div className="buttons">
-        <a href="/test" className="button button-red">Get iOS version</a>
-        <a href="/test" className="button button-green">Get Android version</a>
+        <Button
+          href="https://itunes.apple.com/us/app/console-brawl/id1191387673?mt=8"
+          text="Get iOS version"
+        />
+        <Button
+          href="https://play.google.com/store/apps/details?id=com.consolebrawl"
+          color="green"
+          text="Get Android version"
+        />
       </div>
     </div>
 
     <style jsx>{`
       .intro {
-        background: linear-gradient( 45deg, #121212, #3a3a3a );
+
       }
       .wrapper {
         max-width: 800px;
@@ -40,18 +49,6 @@ export default () => (
       .buttons {
         text-align: center;
         margin-top: -3.5rem;
-      }
-      .button {
-        display: inline-block;
-        background: #f85032;
-        background: linear-gradient(to right, #f85032, #e73827);
-        color: #fefefe;
-        text-decoration: none;
-        margin: 0 1rem 0;
-        padding: 20px;
-        width: 200px;
-        border-radius: 100em;
-        font-size: 18px;
       }
     `}</style>
   </div>
