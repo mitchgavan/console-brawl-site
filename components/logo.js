@@ -1,7 +1,7 @@
 import { PropTypes } from 'react';
 
 const Logo = (props) => (
-  <div>
+  <a href="/">
     <img
       src="/static/images/logo.svg"
       alt="Console Brawl"
@@ -15,7 +15,7 @@ const Logo = (props) => (
         width: 140px;
       }
     `}</style>
-  </div>
+  </a>
 );
 
 const { bool } = PropTypes;
