@@ -6,6 +6,7 @@ import stylesheet from '../styles/index.scss';
 import Header from '../components/header';
 import Hero from '../components/hero';
 import Intro from '../components/intro';
+import Footer from '../components/footer';
 
 export default class extends React.Component {
   static async getInitialProps({ req }) {
@@ -27,6 +28,7 @@ export default class extends React.Component {
         <Header />
         <Hero />
         <Intro />
+        <Footer />
       </div>
     );
   }
