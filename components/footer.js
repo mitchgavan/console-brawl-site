@@ -4,7 +4,7 @@ import { breakpoints } from '../constants/theme';
 
 export default () => (
   <footer>
-    <div className="tl">
+    <div>
       <Logo small />
     </div>
     <div>
@@ -12,7 +12,7 @@ export default () => (
         &copy; Mitch Gavan 2017. All rights reserved.
       </p>
     </div>
-    <div className="tr">
+    <div>
       <FooterIcons />
     </div>
 
@@ -36,6 +36,12 @@ export default () => (
         }
         footer > div  {
           flex: 1 1 33.3333%;
+        }
+        footer div:first-child {
+          text-align: left;
+        }
+        footer div:last-child {
+          text-align: right;
         }
         .column-left {
           text-align: left;
