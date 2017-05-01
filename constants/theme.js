@@ -4,6 +4,6 @@ export const colors = {
   green: '#7db326',
 };
 
-export const sizes = {
-  small: '10px',
+export const breakpoints = {
+  medium: 'screen and (min-width: 769px)',
 };

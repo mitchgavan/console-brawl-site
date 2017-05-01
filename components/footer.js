@@ -1,5 +1,6 @@
 import Logo from './logo';
 import FooterIcons from './footerIcons';
+import { breakpoints } from '../constants/theme';
 
 export default () => (
   <footer>
@@ -27,7 +28,7 @@ export default () => (
         font-weight: 300;
         margin: 0.25rem 0 0.5rem;
       }
-      @media screen and (min-width: 769px) {
+      @media ${breakpoints.medium} {
         footer {
           display: flex;
           justify-content: space-between;

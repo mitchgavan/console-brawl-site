@@ -51,7 +51,7 @@ export default () => (
           padding: 5rem 1rem;
         }
         img {
-          margin: 2rem 0 0 2.5rem;
+          padding: 2rem 0 0 2.5rem;
         }
         .buttons {
           margin-top: -3.5rem;

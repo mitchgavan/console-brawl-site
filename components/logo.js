@@ -1,6 +1,6 @@
 import { PropTypes } from 'react';
 
-const Logo = (props) => (
+const Logo = props => (
   <a href="/">
     <img
       src="/static/images/logo.svg"
@@ -19,6 +19,10 @@ const Logo = (props) => (
 );
 
 const { bool } = PropTypes;
+
+Logo.defaultProps = {
+  small: false,
+};
 
 Logo.propTypes = {
   small: bool,
