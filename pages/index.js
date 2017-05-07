@@ -6,6 +6,7 @@ import stylesheet from '../styles/index.scss';
 import Header from '../components/header';
 import Hero from '../components/hero';
 import Intro from '../components/intro';
+import DownloadButtons from '../components/downloadButtons';
 import Footer from '../components/footer';
 
 export default class extends React.Component {
@@ -28,6 +29,7 @@ export default class extends React.Component {
         <Header />
         <Hero />
         <Intro />
+        <DownloadButtons />
         <Footer />
       </div>
     );

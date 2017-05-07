@@ -36,4 +36,13 @@ a {
   text-decoration: none;
 }
 
+.icon {
+  opacity: 1;
+  transition: opacity 200ms;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 @import 'hamburger';

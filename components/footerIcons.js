@@ -18,13 +18,6 @@ const FooterIcons = () => (
         height: 20px;
         margin: 0 5px;
       }
-      :global(.icon) {
-        opacity: 1;
-        transition: opacity 200ms;
-      }
-      :global(.icon:hover) {
-        opacity: 0.8;
-      }
       @media screen and (min-width: 769px) {
         a {
           margin: 0 0 0 15px;

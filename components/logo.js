@@ -1,4 +1,5 @@
 import { PropTypes } from 'react';
+import { breakpoints } from '../constants/theme';
 
 const Logo = props => (
   <a href="/">
@@ -9,10 +10,15 @@ const Logo = props => (
     />
     <style jsx>{`
       img {
-        width: 240px;
+        width: 215px;
       }
       .small {
         width: 140px;
+      }
+      @media ${breakpoints.medium} {
+        img {
+          width: 240px;
+        }
       }
     `}</style>
   </a>
