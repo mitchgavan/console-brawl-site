@@ -1,10 +1,10 @@
 import { PropTypes } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 const HeroImage = (props) => {
   const imgSrc = `/static/images/${props.platform}.jpg`;
   return (
-    <ReactCSSTransitionGroup
+    <CSSTransitionGroup
       transitionName={props.oppositeDirection ? 'carousel-opposite' : 'carousel'}
       transitionEnterTimeout={2750}
       transitionLeaveTimeout={2750}
@@ -48,7 +48,7 @@ const HeroImage = (props) => {
           transition: transform .75s ease-out 2s;
         }
       `}</style>
-    </ReactCSSTransitionGroup>
+    </CSSTransitionGroup>
   );
 };
 
