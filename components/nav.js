@@ -9,8 +9,8 @@ const handleDownloadClick = () => {
 const Nav = props => (
   <div>
     <nav className={`${(props.isActive ? 'is-active' : '')}`}>
-      <a href="#about" className="link">About</a>
-      <a href="#games" className="link">Games</a>
+      <a href="/about" className="link">About</a>
+      <a href="/games" className="link">Games</a>
       <div className="button-container">
         <button
           onClick={handleDownloadClick}
