@@ -29,6 +29,14 @@ const Nav = props => (
       nav.is-active {
         max-height: 300px;
       }
+      .button {
+        font-size: 100%;
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        color: ${colors.white};
+        line-height: 1;
+      }
       .link {
         display: block;
         padding: 10px 4px;
@@ -60,19 +68,19 @@ const Nav = props => (
         .button {
           display: inline-block;
           margin-left: 12px;
-          padding: 10px 20px;
-          background-color: transparent;
-          color: ${colors.white};
+          padding: 12px 20px;
           text-transform: uppercase;
           letter-spacing: 0.5px;
           border: 2px solid ${colors.white};
           border-radius: 100em;
           font-size: 15px;
+          cursor: pointer;
           transition: all 250ms;
         }
         .button:hover {
           color: ${colors.black};
           background-color: ${colors.white};
+          opacity: 1;
         }
       }
     `}</style>

@@ -3,12 +3,23 @@
 $black: #121212;
 $white: #fafafa;
 
+$base-font: 'Poppins', sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: $base-font;
+}
+
 body {
   margin: 0;
   padding: 0;
   background: $black;
   background: linear-gradient( 45deg, #121212, #3a3a3a );
-  font-family: 'Poppins', sans-serif;
+  font-family: $base-font;
   color: $white;
 }
 
