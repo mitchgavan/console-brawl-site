@@ -1,5 +1,10 @@
 import { PropTypes } from 'react';
+import jump from 'jump.js';
 import { colors, breakpoints } from '../constants/theme';
+
+const handleDownloadClick = () => {
+  jump('#download');
+};
 
 const Nav = props => (
   <div>
@@ -7,7 +12,12 @@ const Nav = props => (
       <a href="#about" className="link">About</a>
       <a href="#games" className="link">Games</a>
       <div className="button-container">
-        <a href="#download" className="link button">Download</a>
+        <button
+          onClick={handleDownloadClick}
+          className="link button"
+        >
+          Download
+        </button>
       </div>
     </nav>
 
@@ -69,10 +79,11 @@ const Nav = props => (
   </div>
 );
 
-const { bool } = PropTypes;
+const { bool, func } = PropTypes;
 
 Nav.propTypes = {
   isActive: bool.isRequired,
+  onDownloadClick: func.isRequired,
 };
 
 export default Nav;

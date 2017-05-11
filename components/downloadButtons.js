@@ -3,7 +3,7 @@ import GooglePlayLogo from '../svgs/google-play.svg';
 import { breakpoints } from '../constants/theme';
 
 export default () => (
-  <div>
+  <div id="download">
     <a href="https://itunes.apple.com/us/app/console-brawl/id1191387673?ls=1&mt=8">
       <AppStoreLogo className="icon" />
     </a>
