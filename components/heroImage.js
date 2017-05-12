@@ -13,6 +13,7 @@ const HeroImage = (props) => {
         src={imgSrc}
         alt={props.platform}
         key={props.platform}
+        onLoad={props.loaded}
       />
       <style jsx>{`
         img {
@@ -52,13 +53,14 @@ const HeroImage = (props) => {
   );
 };
 
-const { bool, string } = PropTypes;
+const { bool, func, string } = PropTypes;
 
 HeroImage.defaultProps = {
   oppositeDirection: false,
 };
 
 HeroImage.propTypes = {
+  loaded: func.isRequired,
   oppositeDirection: bool,
   platform: string.isRequired,
 };

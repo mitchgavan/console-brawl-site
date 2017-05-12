@@ -87,11 +87,10 @@ const Nav = props => (
   </div>
 );
 
-const { bool, func } = PropTypes;
+const { bool } = PropTypes;
 
 Nav.propTypes = {
   isActive: bool.isRequired,
-  onDownloadClick: func.isRequired,
 };
 
 export default Nav;

@@ -8,6 +8,7 @@ class Hero extends Component {
     this.state = {
       active: 0,
       carouselHeight: 0,
+      platformsLoaded: 0,
       platformsA: [
         'master-system',
         'super-nintendo',
@@ -27,17 +28,15 @@ class Hero extends Component {
         'playstation-3',
       ],
     };
+
+    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
 
   componentDidMount() {
-    this.initCarousel();
+    setTimeout(() => { this.changeImages(); }, 4000);
   }
 
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
+  changeImages() {
     this.setState(prevState => ({
       active: prevState.active === this.state.platformsA.length - 1
         ? 0
@@ -45,22 +44,38 @@ class Hero extends Component {
     }));
   }
 
-  initCarousel() {
-    this.timerID = setInterval(() => this.tick(), 4000);
+  handleImageLoaded() {
+    if (this.state.platformsLoaded) {
+      setTimeout(() => { this.changeImages(); }, 4000);
+      this.setState({ platformsLoaded: 0 });
+      return;
+    }
+
+    this.setState(prevState => ({
+      platformsLoaded: prevState.platformsLoaded + 1,
+    }));
   }
 
   render() {
+    const {
+      platformsA,
+      platformsB,
+      active,
+    } = this.state;
+
     return (
       <div className="hero">
         <div className="hero__item">
           <HeroImage
-            platform={this.state.platformsA[this.state.active]}
+            platform={platformsA[active]}
+            loaded={this.handleImageLoaded}
           />
         </div>
         <div className="hero__item">
           <HeroImage
             oppositeDirection
-            platform={this.state.platformsB[this.state.active]}
+            platform={platformsB[active]}
+            loaded={this.handleImageLoaded}
           />
         </div>
         <style jsx>{`
