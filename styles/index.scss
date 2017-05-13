@@ -1,4 +1,6 @@
 @import 'normalize.css';
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 $black: #121212;
 $white: #fafafa;
@@ -54,6 +56,20 @@ a {
   &:hover {
     opacity: 0.8;
   }
+}
+
+.slick-slide {
+  opacity: 1;
+
+  &.slick-cloned {
+    position: absolute;
+    opacity: 0;
+  }
+}
+.slick-vertical .slick-slide {
+  border: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 @import 'hamburger';
