@@ -59,10 +59,22 @@ a {
 }
 
 .slick-slide {
+  height: 140px;
+
+  @media screen and (min-width: 769px) {
+    height: 500px;
+  }
+
 
   img {
+    height: 140px;
+    object-fit: cover;
     opacity: 1;
     transition: opacity 0.5s ease-out;
+
+    @media screen and (min-width: 769px) {
+      height: 500px;
+    }
   }
 
   &::after {
