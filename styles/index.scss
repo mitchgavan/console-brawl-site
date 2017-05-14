@@ -72,7 +72,7 @@ a {
   &.slick-cloned {
 
     &::after {
-      content: 'loading...';
+      content: url(/static/images/loader.svg);
       color: white;
       position: absolute;
       top: 50%;
