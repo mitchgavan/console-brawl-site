@@ -59,13 +59,38 @@ a {
 }
 
 .slick-slide {
-  opacity: 1;
+
+  img {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+  }
+
+  &::after {
+    content: '';
+  }
 
   &.slick-cloned {
-    position: absolute;
-    opacity: 0;
+
+    &::after {
+      content: 'loading...';
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    img {
+      opacity: 0;
+    }
+
+    &:not(:first-of-type) {
+      position: absolute;
+      opacity: 0;
+    }
   }
 }
+
 .slick-vertical .slick-slide {
   border: 0;
   border-top: 1px solid transparent;
