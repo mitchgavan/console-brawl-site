@@ -3,7 +3,16 @@ import Slider from 'react-slick';
 
 const renderSlide = image => (
   <div key={image}>
-    <img src={`/static/images/${image}.jpg`} alt={image} />
+    <img
+      srcSet={`
+        /static/images/platforms/${image}.jpg 400w,
+        /static/images/platforms/${image}@2x.jpg 800w,
+        /static/images/platforms/${image}@3x.jpg 1200w
+      `}
+      sizes="50vw"
+      src={`/static/images/platforms/${image}.jpg`}
+      alt={image}
+    />
   </div>
 );
 

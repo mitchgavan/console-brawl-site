@@ -2,7 +2,7 @@ export default () => (
   <div className="wrapper">
     <h2>Which do you prefer?</h2>
     <p>
-      Find out which video games consoles you prefer with Console
+      Find out which video game consoles you prefer with Console
       Brawl! Includes consoles from way back in the 8-bit days,
       right up to the current generation.
     </p>
