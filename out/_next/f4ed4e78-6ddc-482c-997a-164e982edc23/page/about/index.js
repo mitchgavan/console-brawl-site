@@ -1,6 +1,0 @@
-
-          window.__NEXT_REGISTER_PAGE('/about', function() {
-            var comp = module.exports=webpackJsonp([6],{116:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var u=a(9),n=l(u),d=a(3),r=l(d),f=a(4),o=l(f),s=a(11),c=l(s),i=a(10),m=l(i),p=a(8),_=l(p),x=a(0),E=l(x),v=a(69),j=l(v),y=a(71),b=l(y),g=a(70),h=l(g),k=function(e){function t(){return(0,r.default)(this,t),(0,c.default)(this,(t.__proto__||(0,n.default)(t)).apply(this,arguments))}return(0,m.default)(t,e),(0,o.default)(t,[{key:"render",value:function(){return E.default.createElement("div",{"data-jsx":232084794},E.default.createElement(j.default,{title:"About"}),E.default.createElement(b.default,null),E.default.createElement("div",{className:"soon","data-jsx":232084794},"Coming soon..."),E.default.createElement(h.default,null),E.default.createElement(_.default,{styleId:232084794,css:'.soon[data-jsx="232084794"] {text-align: center;margin: 20rem 0;}'}))}}]),t}(E.default.Component);t.default=k},248:function(e,t,a){e.exports=a(116)}},[248]);
-            return { page: comp.default }
-          })
-        

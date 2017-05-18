@@ -1,6 +1,0 @@
-
-          window.__NEXT_REGISTER_PAGE('/games', function() {
-            var comp = module.exports=webpackJsonp([5],{117:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var n=a(9),u=l(n),d=a(3),r=l(d),f=a(4),o=l(f),s=a(11),c=l(s),i=a(10),m=l(i),p=a(8),_=l(p),x=a(0),E=l(x),v=a(69),j=l(v),y=a(71),g=l(y),h=a(70),b=l(h),k=function(e){function t(){return(0,r.default)(this,t),(0,c.default)(this,(t.__proto__||(0,u.default)(t)).apply(this,arguments))}return(0,m.default)(t,e),(0,o.default)(t,[{key:"render",value:function(){return E.default.createElement("div",{"data-jsx":232084794},E.default.createElement(j.default,{title:"Games"}),E.default.createElement(g.default,null),E.default.createElement("div",{className:"soon","data-jsx":232084794},"Coming soon..."),E.default.createElement(b.default,null),E.default.createElement(_.default,{styleId:232084794,css:'.soon[data-jsx="232084794"] {text-align: center;margin: 20rem 0;}'}))}}]),t}(E.default.Component);t.default=k},249:function(e,t,a){e.exports=a(117)}},[249]);
-            return { page: comp.default }
-          })
-        
