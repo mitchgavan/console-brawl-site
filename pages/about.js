@@ -4,12 +4,6 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 export default class extends React.Component {
-  static async getInitialProps({ req }) {
-    return req
-    ? { userAgent: req.headers['user-agent'] }
-    : { userAgent: navigator.userAgent };
-  }
-
   render() {
     return (
       <div>

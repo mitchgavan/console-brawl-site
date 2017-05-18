@@ -1,4 +1,4 @@
-import { PropTypes } from 'react';
+import PropTypes from 'prop-types';
 import { breakpoints } from '../constants/theme';
 
 const Hamburger = props => (
