@@ -1,4 +1,4 @@
-import { PropTypes } from 'react';
+import PropTypes from 'prop-types';
 import jump from 'jump.js';
 import { colors, breakpoints } from '../constants/theme';
 
