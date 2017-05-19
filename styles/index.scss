@@ -62,17 +62,26 @@ a {
   height: 140px;
 
   @media screen and (min-width: 769px) {
-    height: 500px;
+    height: 350px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    height: 560px;
   }
 
   img {
     height: 140px;
+    width: 100%;
     object-fit: cover;
     opacity: 1;
     transition: opacity 0.5s ease-out;
 
     @media screen and (min-width: 769px) {
-      height: 500px;
+      height: 350px;
+    }
+
+    @media screen and (min-width: 1025px) {
+      height: 560px;
     }
   }
 
@@ -104,8 +113,6 @@ a {
 
 .slick-vertical .slick-slide {
   border: 0;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
 }
 
 @import 'hamburger';
