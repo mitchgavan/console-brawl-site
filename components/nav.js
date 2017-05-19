@@ -24,6 +24,8 @@ const Nav = props => (
     <style jsx>{`
       nav {
         max-height: 0;
+        width: 100%;
+        overflow-y: hidden;
         transition: max-height 500ms ease-out;
       }
       nav.is-active {

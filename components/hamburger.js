@@ -16,7 +16,7 @@ const Hamburger = props => (
 
       .hamburger {
         float: right;
-        margin: 7px 0 0;
+        margin: 4px 0 0;
         outline: none;
       }
       @media ${breakpoints.medium} {
