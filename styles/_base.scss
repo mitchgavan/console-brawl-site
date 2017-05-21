@@ -1,0 +1,55 @@
+$black: #121212;
+$white: #fafafa;
+
+$base-font: 'Poppins', sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: $base-font;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $black;
+  background: linear-gradient( 45deg, #121212, #3a3a3a );
+  font-family: $base-font;
+  color: $white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  opacity: 1;
+  transition: opacity 200ms;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
