@@ -55,6 +55,8 @@ const Nav = props => (
         transition: opacity 200ms;
         width: 100%;
         text-align: center;
+        font-weight: 600;
+        font-size: 18px;
       }
       .link:hover {
         opacity: 0.7;

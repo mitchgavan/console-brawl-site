@@ -1,7 +1,15 @@
-@import 'normalize.css';
+// Frameworks and Libraries
+@import 'normalize-scss/sass/normalize';
+@import 'settings-foundation';
+@import 'foundation-sites/scss/util/util';
+@import 'foundation-sites/scss/global';
+@import 'foundation-sites/scss/grid/grid';
+@include foundation-global-styles;
+@include foundation-grid;
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
+// General
 @import 'base';
 @import 'hero-slider';
 @import 'hamburger';

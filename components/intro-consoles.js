@@ -1,9 +1,18 @@
 export default () => (
   <div className="wrapper">
     <h2>Consoles</h2>
-    <p>
-      From 8-bit to the current gen. Here are the consoles included.
-    </p>
+    <div className="row">
+      <div className="large-6 columns">
+        <p>
+          From 8-bit to the current gen. Here are the consoles included.
+        </p>
+      </div>
+      <div className="large-6 columns">
+        <p>
+          From 8-bit to the current gen. Here are the consoles included.
+        </p>
+      </div>
+    </div>
 
     <style jsx>{`
       .wrapper {
