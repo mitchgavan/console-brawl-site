@@ -6,7 +6,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
-      '/games': { page: '/games' }
+      '/consoles': { page: '/consoles' }
     }
   },
   webpack: (config, { dev }) => {

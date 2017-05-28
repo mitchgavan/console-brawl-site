@@ -1,10 +1,11 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import Hamburger from './hamburger';
 import Nav from './nav';
 import Logo from './logo';
 import { breakpoints } from '../constants/theme';
 
-export default class extends Component {
+class Header extends Component {
   constructor(props) {
     super(props);
 
@@ -28,7 +29,7 @@ export default class extends Component {
           isActive={this.state.isActive}
           onToggleClick={this.handleToggleClick}
         />
-        <Nav isActive={this.state.isActive} />
+        <Nav isActive={this.state.isActive} pathname={this.props.pathname} />
 
         <style jsx>{`
           header {
@@ -47,3 +48,11 @@ export default class extends Component {
     );
   }
 }
+
+const { string } = PropTypes;
+
+Header.propTypes = {
+  pathname: string.isRequired,
+};
+
+export default Header;
