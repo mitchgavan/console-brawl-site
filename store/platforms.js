@@ -6,6 +6,7 @@ export const platformsA = [
   'xbox',
   'gamecube',
   'xbox-360',
+  'playstation-4',
 ];
 
 export const platformsB = [
@@ -16,4 +17,5 @@ export const platformsB = [
   'playstation-2',
   'wii',
   'playstation-3',
+  'xbox-one',
 ];
