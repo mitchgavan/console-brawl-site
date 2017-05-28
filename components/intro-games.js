@@ -1,10 +1,9 @@
 export default () => (
   <div className="wrapper">
-    <h2>Search Games</h2>
+    <h2>Consoles</h2>
     <p>
-      You should be able to find almost every game ever released
+      From 8-bit to the current gen. Here are the consoles included.
     </p>
-    <p><small>(in English speaking territories)</small></p>
 
     <style jsx>{`
       .wrapper {

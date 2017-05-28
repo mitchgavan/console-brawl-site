@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 import jump from 'jump.js';
 import { colors, breakpoints } from '../constants/theme';
 
@@ -9,8 +10,12 @@ const handleDownloadClick = () => {
 const Nav = props => (
   <div>
     <nav className={`${(props.isActive ? 'is-active' : '')}`}>
-      <a href="/about" className="link">About</a>
-      <a href="/games" className="link">Games</a>
+      <Link prefetch href="/about">
+        <a className="link">About</a>
+      </Link>
+      <Link prefetch href="/consoles">
+        <a className="link">Consoles</a>
+      </Link>
       <div className="button-container">
         <button
           onClick={handleDownloadClick}
