@@ -8,7 +8,7 @@ import Footer from '../components/footer';
 export default () => (
   <div>
     <AppHead title="App" />
-    <Header />
+    <Header pathname="/" />
     <Hero />
     <Intro />
     <DownloadButtons />

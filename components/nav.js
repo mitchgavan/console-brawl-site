@@ -17,12 +17,15 @@ const Nav = props => (
         <a className="link">Consoles</a>
       </Link>
       <div className="button-container">
-        <button
-          onClick={handleDownloadClick}
-          className="link button"
-        >
-          Download
-        </button>
+        {props.pathname === '/' ?
+          <button onClick={handleDownloadClick} className="link button">
+            Download
+          </button>
+          :
+          <a href="/#download" className="link button">
+            Download
+          </a>
+        }
       </div>
     </nav>
 
@@ -94,10 +97,11 @@ const Nav = props => (
   </div>
 );
 
-const { bool } = PropTypes;
+const { bool, string } = PropTypes;
 
 Nav.propTypes = {
   isActive: bool.isRequired,
+  pathname: string.isRequired,
 };
 
 export default Nav;

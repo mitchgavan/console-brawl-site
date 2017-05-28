@@ -7,7 +7,7 @@ import Footer from '../components/footer';
 export default () => (
   <div>
     <AppHead title="Games" />
-    <Header />
+    <Header pathname="consoles" />
     <IntroGames />
     <Footer />
   </div>
