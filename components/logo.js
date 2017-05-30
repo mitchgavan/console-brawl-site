@@ -1,23 +1,22 @@
 import PropTypes from 'prop-types';
 import { breakpoints } from '../constants/theme';
+import LogoSVG from '../svgs/logo.svg';
 
 const Logo = props => (
   <a href="/">
-    <img
-      src="/static/images/logo.svg"
-      alt="Console Brawl"
-      className={props.small && 'small'}
+    <LogoSVG
+      className={`logo ${props.small && 'small'}`}
     />
     <style jsx>{`
-      img {
+      :global(.logo) {
         width: 215px;
       }
-      .small {
+      :global(.small) {
         width: 140px;
       }
       @media ${breakpoints.medium} {
-        img {
-          width: 240px;
+        :global(.small) {
+          width: 140px;
         }
       }
     `}</style>
