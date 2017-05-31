@@ -19,3 +19,20 @@ export const platformsB = [
   'playstation-3',
   'xbox-one',
 ];
+
+export const platformDetails = [
+  {
+    name: 'Nintendo Entertainment System',
+    slug: 'nintendo',
+    released: 'July, 1983',
+    developer: 'Nintendo',
+    description: 'Reignited a dying industry.',
+  },
+  {
+    name: 'Sega Master System',
+    slug: 'master-system',
+    released: 'October, 1985',
+    developer: 'Sega',
+    description: 'Let the rivalry begin.',
+  },
+];

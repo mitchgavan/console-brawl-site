@@ -4,7 +4,7 @@ export default () => (
   <div className="hero">
     <h1>The Consoles</h1>
     <p>
-      From 8-bit to the current gen. Below are the consoles included.
+      From 8-bit to the current gen. Here are the consoles included.
     </p>
     <div className="hero__cover">
       <img
