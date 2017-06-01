@@ -1,10 +1,11 @@
 import { platformDetails } from '../../store/platforms';
+import { breakpoints } from '../../constants/theme';
 import ConsoleDetails from './console-details';
 
 const isEven = val => !!(val % 2);
 
 const ConsoleList = () => (
-  <div>
+  <div className="root">
     {platformDetails.map((platform, index) => (
       <ConsoleDetails
         key={platform.slug}
@@ -16,6 +17,16 @@ const ConsoleList = () => (
         reverseOrder={isEven(index)}
       />
     ))}
+    <style jsx>{`
+      .root {
+        padding: 1rem 0;
+      }
+      @media ${breakpoints.medium} {
+        .root {
+          padding: 3rem 0;
+        }
+      }
+  `}</style>
   </div>
 );
 
