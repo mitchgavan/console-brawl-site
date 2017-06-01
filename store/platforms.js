@@ -22,14 +22,14 @@ export const platformsB = [
 
 export const platformDetails = [
   {
-    name: 'Nintendo Entertainment System',
+    name: 'Nintendo (NES)',
     slug: 'nintendo',
     released: 'July, 1983',
     developer: 'Nintendo',
     description: 'Reignited a dying industry.',
   },
   {
-    name: 'Sega Master System',
+    name: 'Master System',
     slug: 'master-system',
     released: 'October, 1985',
     developer: 'Sega',

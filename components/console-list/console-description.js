@@ -4,32 +4,51 @@ import { breakpoints } from '../../constants/theme';
 const ConsoleDescription = (props) => {
   const { name, released, developer, description, reverseOrder } = props;
   return (
-    <div>
-      <header className={`heading ${reverseOrder && 'heading-reverse'}`}>
-        <h3>{name}</h3>
-        <div>{released}</div>
-        <div>{developer}</div>
+    <div className="root">
+      <header className={`header ${reverseOrder && 'header-reverse'}`}>
+        <h3 className="title">{name}</h3>
+        <div className="subtitle">
+          Release Date: <strong>{released}</strong>
+        </div>
+        <div className="subtitle">
+          Developer: <strong>{developer}</strong>
+        </div>
       </header>
       <div className={`description ${!reverseOrder && 'description-reverse'}`}>
         {description}
       </div>
       <style jsx>{`
-
+        .title {
+          font-size: 24px;
+          line-height: 1.2;
+          margin-bottom: 1rem;
+        }
+        .description {
+          margin-top: 1rem;
+        }
         @media ${breakpoints.medium} {
-          .heading {
+          .header {
+            padding-top: 15%;
             text-align: right;
           }
-          .heading-reverse {
+          .header-reverse {
             text-align: left;
+          }
+          .title {
+            font-size: 40px;
+          }
+          .release {
+            font-size: 18px;
           }
           .description {
             position: relative;
             width: 120%;
+            margin-top: 2rem;
             padding: 2rem;
-            background-color: #555;
+            background-color: #444;
           }
           .description-reverse {
-            transform: translateX(-17%);
+            transform: translateX(-16.5%);
           }
         }
       `}
