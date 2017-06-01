@@ -17,18 +17,27 @@ const ConsoleDetails = (props) => {
   const { name, reverseOrder, slug } = props;
   return (
     <div className="root">
-      <div className="row large-collapse">
-        <div className={`columns ${reverseOrder ? 'large-4' : 'large-8'}`}>
-          {reverseOrder
-            ? renderDescription(props)
-            : renderImage(name, slug)}
+      {!reverseOrder &&
+        <div className="row large-collapse">
+          <div className="columns large-8">
+            {renderImage(name, slug)}
+          </div>
+          <div className="columns large-4">
+            {renderDescription(props)}
+          </div>
         </div>
-        <div className={`columns ${reverseOrder ? 'large-8' : 'large-4'}`}>
-          {reverseOrder
-            ? renderImage(name, slug)
-            : renderDescription(props)}
+      }
+      {reverseOrder &&
+        <div className="row large-collapse">
+          <div className="columns large-8 large-push-4">
+            {renderImage(name, slug)}
+          </div>
+          <div className="columns large-4 large-pull-8">
+            {renderDescription(props)}
+          </div>
         </div>
-      </div>
+      }
+
 
       <style jsx>{`
         .root {
