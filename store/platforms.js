@@ -35,4 +35,18 @@ export const platformDetails = [
     developer: 'Sega',
     description: 'Let the rivalry begin.',
   },
+  {
+    name: 'Super NES',
+    slug: 'super-nintendo',
+    released: 'November, 1990',
+    developer: 'Nintendo',
+    description: 'The 16-bit powerhouse.',
+  },
+  {
+    name: 'Mega Drive',
+    slug: 'sega-mega-drive',
+    released: 'October, 1988',
+    developer: 'Sega',
+    description: 'The cool kid on the block.',
+  },
 ];
