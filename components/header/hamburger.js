@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { breakpoints } from '../constants/theme';
+import { breakpoints } from '../../constants/theme';
 
 const Hamburger = props => (
   <button

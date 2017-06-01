@@ -2,8 +2,8 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import Hamburger from './hamburger';
 import Nav from './nav';
-import Logo from './logo';
-import { breakpoints } from '../constants/theme';
+import Logo from '../logo';
+import { breakpoints } from '../../constants/theme';
 
 class Header extends Component {
   constructor(props) {

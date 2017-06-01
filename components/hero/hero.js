@@ -1,6 +1,6 @@
-import HeroSlider from '../components/hero-slider';
-import { breakpoints } from '../constants/theme';
-import { platformsA, platformsB } from '../store/platforms';
+import HeroSlider from './hero-slider';
+import { breakpoints } from '../../constants/theme';
+import { platformsA, platformsB } from '../../store/platforms';
 
 const Hero = () => (
   <div className="hero">

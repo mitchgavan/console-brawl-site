@@ -1,6 +1,6 @@
-import Logo from './logo';
+import Logo from '../logo';
 import FooterIcons from './footer-icons';
-import { breakpoints } from '../constants/theme';
+import { breakpoints } from '../../constants/theme';
 
 export default () => (
   <footer>

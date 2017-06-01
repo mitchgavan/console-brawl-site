@@ -1,5 +1,5 @@
-import Mail from '../svgs/mail.svg';
-import Twitter from '../svgs/twitter.svg';
+import Mail from '../../svgs/mail.svg';
+import Twitter from '../../svgs/twitter.svg';
 
 const FooterIcons = () => (
   <div>

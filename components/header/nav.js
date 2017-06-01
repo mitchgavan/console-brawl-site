@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import jump from 'jump.js';
-import { colors, breakpoints } from '../constants/theme';
+import { colors, breakpoints } from '../../constants/theme';
 
 const handleDownloadClick = () => {
   jump('#download');
