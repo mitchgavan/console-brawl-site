@@ -1,6 +1,8 @@
 import { platformDetails } from '../../store/platforms';
 import ConsoleDetails from './console-details';
 
+const isEven = val => !!(val % 2);
+
 const ConsoleList = () => (
   <div>
     {platformDetails.map((platform, index) => (
@@ -11,7 +13,7 @@ const ConsoleList = () => (
         developer={platform.developer}
         description={platform.description}
         slug={platform.slug}
-        reverseOrder={!!(index % 2)}
+        reverseOrder={isEven(index)}
       />
     ))}
   </div>
