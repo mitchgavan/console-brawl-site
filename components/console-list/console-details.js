@@ -22,13 +22,16 @@ const ConsoleDetails = (props) => {
           {renderImage(name, slug)}
         </div>
         <div className={`columns large-4 ${reverseOrder && 'large-pull-8'}`}>
-          {renderDescription(props)}
+          <p>{renderDescription(props)}</p>
         </div>
       </div>
 
       <style jsx>{`
         .root {
           padding: 1rem 0;
+        }
+        p {
+          margin: 0;
         }
         @media ${breakpoints.medium} {
           .root {

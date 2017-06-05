@@ -16,7 +16,6 @@ export default () => (
       />
     </div>
 
-
     <style jsx>{`
       .hero {
         position: relative;
