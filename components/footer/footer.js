@@ -24,8 +24,8 @@ export default () => (
         background-color: #292929;
       }
       p {
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 13px;
+        font-weight: 400;
         margin: 0.25rem 0 0.5rem;
       }
       @media ${breakpoints.medium} {

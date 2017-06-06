@@ -4,7 +4,13 @@ import { breakpoints } from '../../constants/theme';
 
 const renderImage = (name, slug) => (
   <img
-    src={`/static/images/platforms/${slug}@3x.jpg`}
+    sizes="(min-width: 1024px) 800px, 100vw"
+    srcSet={
+      `/static/images/platforms/${slug}.jpg 400w,
+       /static/images/platforms/${slug}@2x.jpg 800w,
+       /static/images/platforms/${slug}@3x.jpg 1200w`
+    }
+    src={`/static/images/platforms/${slug}@2x.jpg`}
     alt={name}
   />
 );
@@ -22,16 +28,13 @@ const ConsoleDetails = (props) => {
           {renderImage(name, slug)}
         </div>
         <div className={`columns large-4 ${reverseOrder && 'large-pull-8'}`}>
-          <p>{renderDescription(props)}</p>
+          {renderDescription(props)}
         </div>
       </div>
 
       <style jsx>{`
         .root {
           padding: 1rem 0;
-        }
-        p {
-          margin: 0;
         }
         @media ${breakpoints.medium} {
           .root {
