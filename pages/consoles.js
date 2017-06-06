@@ -9,7 +9,10 @@ export default () => (
   <div>
     <AppHead title="Games" />
     <Header pathname="consoles" />
-    <HeroPanel />
+    <HeroPanel
+      title="The Consoles"
+      tagline="From 8-bit to the current gen. Here are the consoles included."
+    />
     <ConsoleList />
     <Footer />
   </div>

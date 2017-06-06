@@ -1,11 +1,10 @@
+import PropTypes from 'prop-types';
 import { breakpoints } from '../constants/theme';
 
-export default () => (
+const HeroPanel = ({ title, tagline }) => (
   <div className="hero">
-    <h1>The Consoles</h1>
-    <p>
-      From 8-bit to the current gen. Here are the consoles included.
-    </p>
+    <h1>{title}</h1>
+    <p>{tagline}</p>
     <div className="hero__cover">
       <img
         sizes="150vw"
@@ -74,3 +73,12 @@ export default () => (
     `}</style>
   </div>
 );
+
+const { string } = PropTypes;
+
+HeroPanel.propTypes = {
+  title: string.isRequired,
+  tagline: string.isRequired,
+};
+
+export default HeroPanel;
