@@ -15,7 +15,7 @@ const ConsoleDescription = (props) => {
         </div>
       </header>
       <div className={`description ${!reverseOrder && 'description-reverse'}`}>
-        {description}
+        <p>{description}</p>
       </div>
       <style jsx>{`
         .title {
@@ -23,8 +23,15 @@ const ConsoleDescription = (props) => {
           line-height: 1.2;
           margin-bottom: 1rem;
         }
+        .subtitle {
+          font-size: 14px;
+        }
         .description {
           margin-top: 1rem;
+        }
+        .description p {
+          margin: 0;
+          font-size: 16px;
         }
         @media ${breakpoints.medium} {
           .header {

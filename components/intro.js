@@ -26,9 +26,6 @@ export default () => (
         margin: 0 auto 1rem;
         font-size: 32px;
       }
-      p {
-        font-size: 16px;
-      }
       @media (min-width: 769px) {
         .wrapper {
           padding: 5rem 1rem 0;
@@ -38,9 +35,6 @@ export default () => (
         }
         h2 {
           font-size: 40px;
-        }
-        p {
-          font-size: 18px;
         }
       }
     `}</style>
