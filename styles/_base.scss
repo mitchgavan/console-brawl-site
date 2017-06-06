@@ -41,6 +41,12 @@ p {
   margin-bottom: 1.25rem;
   line-height: 1.6;
   font-weight: 400;
+  font-size: 16px;
+
+  @include breakpoint($bp-medium) {
+    font-size: 18px;
+    margin-bottom: 1.25rem;
+  }
 }
 
 a {
