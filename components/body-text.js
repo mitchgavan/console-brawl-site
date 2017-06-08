@@ -3,7 +3,7 @@ import { breakpoints } from '../constants/theme';
 
 const BodyText = ({ paragraphs }) => (
   <div className="wrapper">
-    {paragraphs.map(text => <p>{text}</p>)}
+    {paragraphs.map(text => <p key={text}>{text}</p>)}
 
     <style jsx>{`
       .wrapper {
