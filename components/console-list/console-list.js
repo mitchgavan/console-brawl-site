@@ -1,11 +1,12 @@
-import { platformDetails } from '../../store/platforms';
-import { breakpoints } from '../../constants/theme';
+import { developers, platformDetails } from '../../store/platforms';
 import ConsoleDetails from './console-details';
+import ConsoleToggle from './console-toggle';
 
 const isEven = val => !!(val % 2);
 
 const ConsoleList = () => (
   <div className="root">
+    <ConsoleToggle developers={developers} />
     {platformDetails.map((platform, index) => (
       <ConsoleDetails
         key={platform.slug}
@@ -17,16 +18,6 @@ const ConsoleList = () => (
         reverseOrder={isEven(index)}
       />
     ))}
-    <style jsx>{`
-      .root {
-        padding: 1rem 0;
-      }
-      @media ${breakpoints.medium} {
-        .root {
-          padding: 3rem 0;
-        }
-      }
-  `}</style>
   </div>
 );
 

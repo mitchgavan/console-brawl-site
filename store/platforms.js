@@ -20,6 +20,13 @@ export const platformsB = [
   'xbox-one',
 ];
 
+export const developers = [
+  'Microsoft',
+  'Nintendo',
+  'Sega',
+  'Sony',
+];
+
 export const platformDetails = [
   {
     name: 'Nintendo (NES)',
