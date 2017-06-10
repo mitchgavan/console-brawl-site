@@ -22,18 +22,17 @@ const ConsoleToggle = ({ developers, toggle, toggledOn }) => (
     </div>
     <style jsx>{`
       .root {
-        margin-top: -30px;
         padding: 0;
         text-align: center;
       }
       .toggle {
         position: relative;
-        display: inline-flex;
-        justify-content: center;
+        display: flex;
         margin-bottom: 2rem;
         padding: 14px;
         background-color: ${colors.black};
         z-index: 1;
+        overflow: auto;
       }
       .toggle__button {
         padding: 7px 20px;
@@ -45,8 +44,12 @@ const ConsoleToggle = ({ developers, toggle, toggledOn }) => (
       }
       @media ${breakpoints.medium} {
         .root {
+          margin-top: -30px;
           padding: 0;
         }
+        .toggle {
+          display: inline-flex;
+          justify-content: center;
       }
   `}</style>
   </div>
