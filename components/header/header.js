@@ -33,7 +33,7 @@ class Header extends Component {
 
         <style jsx>{`
           header {
-            padding: 10px 20px;
+            padding: 0 20px;
             color: white;
           }
           @media ${breakpoints.medium} {
@@ -41,6 +41,7 @@ class Header extends Component {
               display: flex;
               justify-content: space-between;
               align-items: center;
+              padding: 10px 20px;
             }
           }
         `}</style>
