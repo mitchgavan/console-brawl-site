@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import ConsoleDescription from './console-description';
 import { breakpoints } from '../../constants/theme';
+import ConsoleDescription from './console-description';
 
 const renderImage = (name, slug) => (
   <img

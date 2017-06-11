@@ -1,8 +1,8 @@
+import { breakpoints } from '../../constants/theme';
 import Logo from '../logo';
 import FooterIcons from './footer-icons';
-import { breakpoints } from '../../constants/theme';
 
-export default () => (
+const Footer = () => (
   <footer>
     <div>
       <Logo small />
@@ -57,3 +57,5 @@ export default () => (
 
   </footer>
 );
+
+export default Footer;

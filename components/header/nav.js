@@ -9,7 +9,7 @@ const handleDownloadClick = () => {
 
 const Nav = props => (
   <div>
-    <nav className={`${(props.isActive ? 'is-active' : '')}`}>
+    <nav className={`${props.isActive && 'is-active'}`}>
       <Link prefetch href="/about">
         <a className="link">About</a>
       </Link>

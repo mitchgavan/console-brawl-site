@@ -50,6 +50,7 @@ const ConsoleToggle = ({ developers, toggle, toggledOn }) => (
         .toggle {
           display: inline-flex;
           justify-content: center;
+        }
       }
   `}</style>
   </div>

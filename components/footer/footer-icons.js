@@ -1,12 +1,14 @@
+import { breakpoints } from '../../constants/theme';
+import { URL_EMAIL, URL_TWITTER } from '../../constants/constants';
 import Mail from '../../svgs/mail.svg';
 import Twitter from '../../svgs/twitter.svg';
 
 const FooterIcons = () => (
   <div>
-    <a href="https://twitter.com/MitchG23">
+    <a href={URL_TWITTER}>
       <Twitter width="18" height="18" fill="#fefefe" className="icon icon-twitter" />
     </a>
-    <a href="mailto:mitchgavan@gmail.com">
+    <a href={URL_EMAIL}>
       <Mail width="18" height="18" fill="#fefefe" className="icon icon-mail" />
     </a>
 
@@ -18,7 +20,7 @@ const FooterIcons = () => (
         height: 20px;
         margin: 0 5px;
       }
-      @media screen and (min-width: 769px) {
+      @media ${breakpoints.medium} {
         a {
           margin: 0 0 0 15px;
         }
