@@ -1,13 +1,14 @@
 import AppStoreLogo from '../svgs/app-store.svg';
 import GooglePlayLogo from '../svgs/google-play.svg';
 import { breakpoints } from '../constants/theme';
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from '../constants/constants';
 
 export default () => (
   <div id="download">
-    <a href="https://itunes.apple.com/us/app/console-brawl/id1191387673?ls=1&mt=8">
+    <a href={APP_STORE_URL}>
       <AppStoreLogo className="icon" />
     </a>
-    <a href="https://play.google.com/store/apps/details?id=com.consolebrawl&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+    <a href={GOOGLE_PLAY_URL}>
       <GooglePlayLogo className="icon" />
     </a>
 
