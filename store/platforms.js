@@ -82,7 +82,7 @@ export const platformDetails = [
     slug: 'sega-dreamcast',
     released: 'November 27, 1998',
     developer: 'Sega',
-    description: 'Sega\'s last hurrah',
+    description: 'The Dreamcast enjoyed a successful launch, but that soon slowed down and ended after a short lifespan. Lack of third party support was one of the main reasons for this. Nevertheless, it produced some great games including Shenmue, Jet Set Radio and Crazy Taxi. Along with a host of arcade classics.',
   },
   {
     name: 'Playstation 2',
