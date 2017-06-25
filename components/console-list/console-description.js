@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { breakpoints } from '../../constants/theme';
 
 const ConsoleDescription = (props) => {
   const { name, released, developer, description, reverseOrder } = props;
@@ -17,49 +16,6 @@ const ConsoleDescription = (props) => {
       <div className={`description ${!reverseOrder && 'description-reverse'}`}>
         <p>{description}</p>
       </div>
-      <style jsx>{`
-        .title {
-          font-size: 24px;
-          line-height: 1.2;
-          margin-bottom: 1rem;
-        }
-        .subtitle {
-          font-size: 14px;
-        }
-        .description {
-          margin-top: 1rem;
-        }
-        .description p {
-          margin: 0;
-          font-size: 16px;
-        }
-        @media ${breakpoints.medium} {
-          .header {
-            padding-top: 15%;
-            text-align: right;
-          }
-          .header-reverse {
-            text-align: left;
-          }
-          .title {
-            font-size: 40px;
-          }
-          .release {
-            font-size: 18px;
-          }
-          .description {
-            position: relative;
-            width: 120%;
-            margin-top: 2rem;
-            padding: 2rem;
-            background-color: #444;
-          }
-          .description-reverse {
-            transform: translateX(-16.5%);
-          }
-        }
-      `}
-      </style>
     </div>
   );
 };

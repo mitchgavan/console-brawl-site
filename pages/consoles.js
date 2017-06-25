@@ -7,7 +7,7 @@ import Footer from '../components/footer/footer';
 
 export default () => (
   <div>
-    <AppHead title="Games" />
+    <AppHead title="Consoles" />
     <Header pathname="consoles" />
     <HeroPanel
       title="The Consoles"

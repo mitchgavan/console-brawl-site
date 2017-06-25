@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ConsoleDescription /> renders correctly 1`] = `
+<div
+  className="root"
+>
+  <header
+    className="header false"
+  >
+    <h3
+      className="title"
+    >
+      Gamecube
+    </h3>
+    <div
+      className="subtitle"
+    >
+      Release Date: 
+      <strong>
+        September 14, 2001
+      </strong>
+    </div>
+    <div
+      className="subtitle"
+    >
+      Developer: 
+      <strong>
+        Nintendo
+      </strong>
+    </div>
+  </header>
+  <div
+    className="description description-reverse"
+  >
+    <p>
+      A cool console
+    </p>
+  </div>
+</div>
+`;
