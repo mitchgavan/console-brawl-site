@@ -1,3 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ConsoleDetails /> renders correctly 1`] = `<div />`;
+exports[`It renders correctly 1`] = `
+<div>
+  <div
+    className="root"
+    data-jsx={2502043678}
+  >
+    <div
+      className="row large-collapse"
+      data-jsx={2502043678}
+    >
+      <div
+        className="columns large-8 false"
+        data-jsx={2502043678}
+      >
+        <img
+          alt="Playstation 1"
+          sizes="(min-width: 1024px) 800px, 100vw"
+          src="/static/images/platforms/playstation-1@2x.jpg"
+          srcSet="/static/images/platforms/playstation-1.jpg 400w,
+               /static/images/platforms/playstation-1@2x.jpg 800w,
+               /static/images/platforms/playstation-1@3x.jpg 1200w"
+        />
+      </div>
+      <div
+        className="columns large-4 false"
+        data-jsx={2502043678}
+      >
+        <ConsoleDescription
+          description="Very cool."
+          developer="Sony"
+          name="Playstation 1"
+          released="December 3, 1994"
+          reverseOrder={false}
+          slug="playstation-1"
+          toggledOn="All"
+        />
+      </div>
+    </div>
+    <_class
+      css=".root[data-jsx=\\"2502043678\\"] {padding: 1rem 0;}@media screen and (min-width: 769px) {.root[data-jsx=\\"2502043678\\"] {padding: 3rem 0;}}"
+      styleId={2502043678}
+    />
+  </div>
+</div>
+`;
+
+exports[`It renders correctly 2`] = `
+<div>
+  <div
+    className="root"
+    data-jsx={2502043678}
+  >
+    <div
+      className="row large-collapse"
+      data-jsx={2502043678}
+    >
+      <div
+        className="columns large-8 large-push-4"
+        data-jsx={2502043678}
+      >
+        <img
+          alt="Playstation 1"
+          sizes="(min-width: 1024px) 800px, 100vw"
+          src="/static/images/platforms/playstation-1@2x.jpg"
+          srcSet="/static/images/platforms/playstation-1.jpg 400w,
+               /static/images/platforms/playstation-1@2x.jpg 800w,
+               /static/images/platforms/playstation-1@3x.jpg 1200w"
+        />
+      </div>
+      <div
+        className="columns large-4 large-pull-8"
+        data-jsx={2502043678}
+      >
+        <ConsoleDescription
+          description="Very cool."
+          developer="Sony"
+          name="Playstation 1"
+          released="December 3, 1994"
+          reverseOrder={true}
+          slug="playstation-1"
+          toggledOn="All"
+        />
+      </div>
+    </div>
+    <_class
+      css=".root[data-jsx=\\"2502043678\\"] {padding: 1rem 0;}@media screen and (min-width: 769px) {.root[data-jsx=\\"2502043678\\"] {padding: 3rem 0;}}"
+      styleId={2502043678}
+    />
+  </div>
+</div>
+`;
+
+exports[`It renders correctly 3`] = `<div />`;

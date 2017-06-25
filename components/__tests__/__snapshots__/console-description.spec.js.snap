@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ConsoleDescription /> renders correctly 1`] = `
+exports[`It renders correctly 1`] = `
 <div
   className="root"
 >
@@ -31,6 +31,45 @@ exports[`<ConsoleDescription /> renders correctly 1`] = `
   </header>
   <div
     className="description description-reverse"
+  >
+    <p>
+      A cool console
+    </p>
+  </div>
+</div>
+`;
+
+exports[`It renders correctly 2`] = `
+<div
+  className="root"
+>
+  <header
+    className="header header-reverse"
+  >
+    <h3
+      className="title"
+    >
+      Gamecube
+    </h3>
+    <div
+      className="subtitle"
+    >
+      Release Date: 
+      <strong>
+        September 14, 2001
+      </strong>
+    </div>
+    <div
+      className="subtitle"
+    >
+      Developer: 
+      <strong>
+        Nintendo
+      </strong>
+    </div>
+  </header>
+  <div
+    className="description false"
   >
     <p>
       A cool console
