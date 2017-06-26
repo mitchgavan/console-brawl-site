@@ -1,1 +1,1 @@
-export default val => !!(val % 2);
+export default val => !!(val % 2 === 0);
