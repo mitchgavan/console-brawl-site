@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correctly 1`] = `
+<withHandlers(Component)
+  active={[Function]}
+  toggledOn="All"
+/>
+`;

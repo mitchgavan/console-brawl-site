@@ -3,77 +3,109 @@
 exports[`It renders correctly 1`] = `
 <div
   className="root"
+  data-jsx={2643782231}
 >
   <header
     className="header false"
+    data-jsx={2643782231}
   >
     <h3
       className="title"
+      data-jsx={2643782231}
     >
       Gamecube
     </h3>
     <div
       className="subtitle"
+      data-jsx={2643782231}
     >
       Release Date: 
-      <strong>
+      <strong
+        data-jsx={2643782231}
+      >
         September 14, 2001
       </strong>
     </div>
     <div
       className="subtitle"
+      data-jsx={2643782231}
     >
       Developer: 
-      <strong>
+      <strong
+        data-jsx={2643782231}
+      >
         Nintendo
       </strong>
     </div>
   </header>
   <div
     className="description description-reverse"
+    data-jsx={2643782231}
   >
-    <p>
+    <p
+      data-jsx={2643782231}
+    >
       A cool console
     </p>
   </div>
+  <_class
+    css=".title[data-jsx=\\"2643782231\\"] {font-size: 24px;line-height: 1.2;margin-bottom: 1rem;}.subtitle[data-jsx=\\"2643782231\\"] {font-size: 14px;}.description[data-jsx=\\"2643782231\\"] {margin-top: 1rem;}.description[data-jsx=\\"2643782231\\"] p[data-jsx=\\"2643782231\\"] {margin: 0;font-size: 16px;}@media screen and (min-width: 769px) {.header[data-jsx=\\"2643782231\\"] {padding-top: 15%;text-align: right;}.header-reverse[data-jsx=\\"2643782231\\"] {text-align: left;}.title[data-jsx=\\"2643782231\\"] {font-size: 40px;}.release[data-jsx=\\"2643782231\\"] {font-size: 18px;}.description[data-jsx=\\"2643782231\\"] {position: relative;width: 120%;margin-top: 2rem;padding: 2rem;background-color: #444;}.description-reverse[data-jsx=\\"2643782231\\"] {-webkit-transform: translateX(-16.5%);-moz-transform: translateX(-16.5%);-ms-transform: translateX(-16.5%);transform: translateX(-16.5%);}}"
+    styleId={2643782231}
+  />
 </div>
 `;
 
 exports[`It renders correctly 2`] = `
 <div
   className="root"
+  data-jsx={2643782231}
 >
   <header
     className="header header-reverse"
+    data-jsx={2643782231}
   >
     <h3
       className="title"
+      data-jsx={2643782231}
     >
       Gamecube
     </h3>
     <div
       className="subtitle"
+      data-jsx={2643782231}
     >
       Release Date: 
-      <strong>
+      <strong
+        data-jsx={2643782231}
+      >
         September 14, 2001
       </strong>
     </div>
     <div
       className="subtitle"
+      data-jsx={2643782231}
     >
       Developer: 
-      <strong>
+      <strong
+        data-jsx={2643782231}
+      >
         Nintendo
       </strong>
     </div>
   </header>
   <div
     className="description false"
+    data-jsx={2643782231}
   >
-    <p>
+    <p
+      data-jsx={2643782231}
+    >
       A cool console
     </p>
   </div>
+  <_class
+    css=".title[data-jsx=\\"2643782231\\"] {font-size: 24px;line-height: 1.2;margin-bottom: 1rem;}.subtitle[data-jsx=\\"2643782231\\"] {font-size: 14px;}.description[data-jsx=\\"2643782231\\"] {margin-top: 1rem;}.description[data-jsx=\\"2643782231\\"] p[data-jsx=\\"2643782231\\"] {margin: 0;font-size: 16px;}@media screen and (min-width: 769px) {.header[data-jsx=\\"2643782231\\"] {padding-top: 15%;text-align: right;}.header-reverse[data-jsx=\\"2643782231\\"] {text-align: left;}.title[data-jsx=\\"2643782231\\"] {font-size: 40px;}.release[data-jsx=\\"2643782231\\"] {font-size: 18px;}.description[data-jsx=\\"2643782231\\"] {position: relative;width: 120%;margin-top: 2rem;padding: 2rem;background-color: #444;}.description-reverse[data-jsx=\\"2643782231\\"] {-webkit-transform: translateX(-16.5%);-moz-transform: translateX(-16.5%);-ms-transform: translateX(-16.5%);transform: translateX(-16.5%);}}"
+    styleId={2643782231}
+  />
 </div>
 `;
