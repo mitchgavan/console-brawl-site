@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import ConsoleDetails from '../console-list/console-details';
+import ConsoleDetails from '../components/console-list/console-details';
 
 test('It renders correctly', () => {
-  const tree = shallow(
+  let tree = shallow(
     <ConsoleDetails
       key="playstation-1"
       name="Playstation 1"
@@ -18,7 +18,7 @@ test('It renders correctly', () => {
   );
   expect(toJson(tree)).toMatchSnapshot();
 
-  const treeReverseOrder = shallow(
+  tree = shallow(
     <ConsoleDetails
       key="playstation-1"
       name="Playstation 1"
@@ -30,9 +30,9 @@ test('It renders correctly', () => {
       toggledOn="All"
     />,
   );
-  expect(toJson(treeReverseOrder)).toMatchSnapshot();
+  expect(toJson(tree)).toMatchSnapshot();
 
-  const treeToggledOff = shallow(
+  tree = shallow(
     <ConsoleDetails
       key="playstation-1"
       name="Playstation 1"
@@ -44,5 +44,5 @@ test('It renders correctly', () => {
       toggledOn="Nintendo"
     />,
   );
-  expect(toJson(treeToggledOff)).toMatchSnapshot();
+  expect(toJson(tree)).toMatchSnapshot();
 });

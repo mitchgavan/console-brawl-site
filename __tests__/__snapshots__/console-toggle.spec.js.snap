@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders correctly 1`] = `
+<div
+  className="root"
+  data-jsx={3417253327}
+>
+  <div
+    className="toggle"
+    data-jsx={3417253327}
+  >
+    <button
+      className="toggle__button is-active"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      All
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Microsoft
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Nintendo
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Sega
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Sony
+    </button>
+  </div>
+  <_class
+    css=".root[data-jsx=\\"3417253327\\"] {padding: 0;text-align: center;}.toggle[data-jsx=\\"3417253327\\"] {position: relative;display:-webkit-flex; display:flex;margin-bottom: 2rem;padding: 14px;background-color: #121212;z-index: 1;overflow: auto;}.toggle__button[data-jsx=\\"3417253327\\"] {padding: 7px 20px;border-radius: 100em;color: #fafafa;}.toggle__button.is-active[data-jsx=\\"3417253327\\"] {background-color: #3b3b3b;}@media screen and (min-width: 769px) {.root[data-jsx=\\"3417253327\\"] {margin-top: -30px;padding: 0;}.toggle[data-jsx=\\"3417253327\\"] {display:-webkit-inline-flex; display:inline-flex;justify-content: center;}}"
+    styleId={3417253327}
+  />
+</div>
+`;
+
+exports[`It renders correctly 2`] = `
+<div
+  className="root"
+  data-jsx={3417253327}
+>
+  <div
+    className="toggle"
+    data-jsx={3417253327}
+  >
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      All
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Microsoft
+    </button>
+    <button
+      className="toggle__button is-active"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Nintendo
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Sega
+    </button>
+    <button
+      className="toggle__button false"
+      data-jsx={3417253327}
+      onClick={[Function]}
+    >
+      Sony
+    </button>
+  </div>
+  <_class
+    css=".root[data-jsx=\\"3417253327\\"] {padding: 0;text-align: center;}.toggle[data-jsx=\\"3417253327\\"] {position: relative;display:-webkit-flex; display:flex;margin-bottom: 2rem;padding: 14px;background-color: #121212;z-index: 1;overflow: auto;}.toggle__button[data-jsx=\\"3417253327\\"] {padding: 7px 20px;border-radius: 100em;color: #fafafa;}.toggle__button.is-active[data-jsx=\\"3417253327\\"] {background-color: #3b3b3b;}@media screen and (min-width: 769px) {.root[data-jsx=\\"3417253327\\"] {margin-top: -30px;padding: 0;}.toggle[data-jsx=\\"3417253327\\"] {display:-webkit-inline-flex; display:inline-flex;justify-content: center;}}"
+    styleId={3417253327}
+  />
+</div>
+`;

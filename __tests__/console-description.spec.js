@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import ConsoleDescription from '../console-list/console-description';
+import ConsoleDescription from '../components/console-list/console-description';
 
 test('It renders correctly', () => {
-  const tree = shallow(
+  let tree = shallow(
     <ConsoleDescription
       description="A cool console"
       developer="Nintendo"
@@ -15,7 +15,7 @@ test('It renders correctly', () => {
   );
   expect(toJson(tree)).toMatchSnapshot();
 
-  const treeWithReverse = shallow(
+  tree = shallow(
     <ConsoleDescription
       description="A cool console"
       developer="Nintendo"
@@ -24,5 +24,5 @@ test('It renders correctly', () => {
       reverseOrder
     />,
   );
-  expect(toJson(treeWithReverse)).toMatchSnapshot();
+  expect(toJson(tree)).toMatchSnapshot();
 });
