@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 import ConsoleDetails from '../components/console-list/console-details';
 
 test('It renders correctly', () => {
-  let tree = shallow(
+  const tree = shallow(
     <ConsoleDetails
       key="playstation-1"
       name="Playstation 1"
@@ -17,8 +17,10 @@ test('It renders correctly', () => {
     />,
   );
   expect(toJson(tree)).toMatchSnapshot();
+});
 
-  tree = shallow(
+test('It renders in reverse order', () => {
+  const tree = shallow(
     <ConsoleDetails
       key="playstation-1"
       name="Playstation 1"
@@ -31,8 +33,10 @@ test('It renders correctly', () => {
     />,
   );
   expect(toJson(tree)).toMatchSnapshot();
+});
 
-  tree = shallow(
+test('It renders Nintendo consoles only', () => {
+  const tree = shallow(
     <ConsoleDetails
       key="playstation-1"
       name="Playstation 1"

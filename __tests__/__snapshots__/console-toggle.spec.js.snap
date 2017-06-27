@@ -52,7 +52,7 @@ exports[`It renders correctly 1`] = `
 </div>
 `;
 
-exports[`It renders correctly 2`] = `
+exports[`It renders with Nintendo tab selected 1`] = `
 <div
   className="root"
   data-jsx={3417253327}

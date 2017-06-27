@@ -55,7 +55,7 @@ exports[`It renders correctly 1`] = `
 </div>
 `;
 
-exports[`It renders correctly 2`] = `
+exports[`It renders reverse layout 1`] = `
 <div
   className="root"
   data-jsx={2643782231}

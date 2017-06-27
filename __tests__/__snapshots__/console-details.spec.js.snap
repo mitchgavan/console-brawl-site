@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`It renders Nintendo consoles only 1`] = `<div />`;
+
 exports[`It renders correctly 1`] = `
 <div>
   <div
@@ -46,7 +48,7 @@ exports[`It renders correctly 1`] = `
 </div>
 `;
 
-exports[`It renders correctly 2`] = `
+exports[`It renders in reverse order 1`] = `
 <div>
   <div
     className="root"
@@ -91,5 +93,3 @@ exports[`It renders correctly 2`] = `
   </div>
 </div>
 `;
-
-exports[`It renders correctly 3`] = `<div />`;

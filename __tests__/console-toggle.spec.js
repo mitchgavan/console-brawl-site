@@ -5,7 +5,7 @@ import ConsoleToggle from '../components/console-list/console-toggle';
 import { developers } from '../store/platforms';
 
 test('It renders correctly', () => {
-  let tree = shallow(
+  const tree = shallow(
     <ConsoleToggle
       developers={developers}
       toggle={() => false}
@@ -13,8 +13,10 @@ test('It renders correctly', () => {
     />,
   );
   expect(toJson(tree)).toMatchSnapshot();
+});
 
-  tree = shallow(
+test('It renders with Nintendo tab selected', () => {
+  const tree = shallow(
     <ConsoleToggle
       developers={developers}
       toggle={() => false}

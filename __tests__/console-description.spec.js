@@ -4,7 +4,7 @@ import toJson from 'enzyme-to-json';
 import ConsoleDescription from '../components/console-list/console-description';
 
 test('It renders correctly', () => {
-  let tree = shallow(
+  const tree = shallow(
     <ConsoleDescription
       description="A cool console"
       developer="Nintendo"
@@ -14,8 +14,10 @@ test('It renders correctly', () => {
     />,
   );
   expect(toJson(tree)).toMatchSnapshot();
+});
 
-  tree = shallow(
+test('It renders reverse layout', () => {
+  const tree = shallow(
     <ConsoleDescription
       description="A cool console"
       developer="Nintendo"
